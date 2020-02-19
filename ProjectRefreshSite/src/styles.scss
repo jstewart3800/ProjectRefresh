@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+
+body{
+    background-image: url(assets\ArcadeCabinet.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.HTPLabel, .title, .menu, .gameHead, #endHead{
+    border-bottom: 5px solid darkcyan;
+}
+
+.whiteText{
+    color: white;
+}
+
+.centerText{
+    text-align: center;
+}

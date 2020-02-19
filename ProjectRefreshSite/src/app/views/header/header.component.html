@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col optionsBar">
+            <ng-template #content let-modal>
+                <div class="modal-header">
+                    <h4 class="modal-title d-flex justify-content-center" id="modal-basic-title">Options</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal Content -->
+                    <i class="whiteText">Created by Jon Stewart</i>
+                    <div class="container d-flex flex-column align-items-center">
+                        <!-- Stick Sensitivity -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 id="senSlider">
+                                    <form>
+                                        <div class="form-group">
+                                            <h3 class="my-3 whiteText">Stick Sensitivity</h3>
+                                            <input type="range" class="form-control-range" id="formControlRange">
+                                        </div>
+                                    </form>
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Resolution -->
+                        <div class="row">
+                            <div class="col-12">
+                                <form>
+                                    <div class="form-group">
+                                        <h3 for="formControlRange" class="whiteText">Resolution</h3>
+                                        <input type="range" class="form-control-range" id="formControlRange">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-dark " (click)="modal.close('Save click')">Close</button>
+                </div>
+            </ng-template>
+
+            <button class="btn btn-lg btn-light" (click)="open(content)">Options</button>
+
+        </div>
+    </div>
+</div>
